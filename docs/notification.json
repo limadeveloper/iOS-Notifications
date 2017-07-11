@@ -1,0 +1,12 @@
+{
+	"aps": {
+		"mutable-content": 1,
+		"category": "pusher",
+		"attachment": "http://jlimadeveloper.com/images/StarWars/Yoda-1.png",
+		"alert": {
+			"title": "Yoda",
+			"subtitle": "Jedi Master",
+			"body": "I'm Yoda"
+		}
+	}
+}

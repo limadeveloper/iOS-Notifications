@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="NotificationContent" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides/>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTv-Ir-pxP">
+                                <rect key="frame" x="8" y="8" width="304" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="geY-68-lum"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OU9-Ds-jSU">
+                                <rect key="frame" x="8" y="33" width="304" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="MiX-m5-O97"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.58431372550000005" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="duj-Ct-Jer">
+                                <rect key="frame" x="8" y="58" width="304" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IMb-Sm-4ei"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JjK-wM-uAt">
+                                <rect key="frame" x="8" y="101" width="304" height="111"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="JjK-wM-uAt" secondAttribute="bottom" constant="8" id="1Z2-vv-zgM"/>
+                            <constraint firstItem="JjK-wM-uAt" firstAttribute="trailing" secondItem="duj-Ct-Jer" secondAttribute="trailing" id="1zH-Ph-vbi"/>
+                            <constraint firstItem="jTv-Ir-pxP" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="8" id="2Uy-GU-yhN"/>
+                            <constraint firstItem="OU9-Ds-jSU" firstAttribute="leading" secondItem="jTv-Ir-pxP" secondAttribute="leading" id="2sv-v0-4jU"/>
+                            <constraint firstItem="JjK-wM-uAt" firstAttribute="top" secondItem="duj-Ct-Jer" secondAttribute="bottom" constant="8" id="Kup-VE-Q8L"/>
+                            <constraint firstItem="duj-Ct-Jer" firstAttribute="top" secondItem="OU9-Ds-jSU" secondAttribute="bottom" constant="5" id="Odg-Qb-xEJ"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="jTv-Ir-pxP" secondAttribute="trailing" constant="8" id="UPP-PP-SHP"/>
+                            <constraint firstItem="jTv-Ir-pxP" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" constant="8" id="eAY-a9-g1a"/>
+                            <constraint firstItem="JjK-wM-uAt" firstAttribute="leading" secondItem="duj-Ct-Jer" secondAttribute="leading" id="fnb-aL-BsF"/>
+                            <constraint firstItem="OU9-Ds-jSU" firstAttribute="trailing" secondItem="jTv-Ir-pxP" secondAttribute="trailing" id="i9C-Sa-d3a"/>
+                            <constraint firstItem="duj-Ct-Jer" firstAttribute="leading" secondItem="OU9-Ds-jSU" secondAttribute="leading" id="kXj-z0-d4q"/>
+                            <constraint firstItem="OU9-Ds-jSU" firstAttribute="top" secondItem="jTv-Ir-pxP" secondAttribute="bottom" constant="5" id="oVv-9q-NF0"/>
+                            <constraint firstItem="duj-Ct-Jer" firstAttribute="trailing" secondItem="OU9-Ds-jSU" secondAttribute="trailing" id="xXI-6u-pvz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="220"/>
+                    <connections>
+                        <outlet property="attachmentImageView" destination="JjK-wM-uAt" id="xZM-jt-cda"/>
+                        <outlet property="bodyLabel" destination="duj-Ct-Jer" id="IQo-m4-gkd"/>
+                        <outlet property="subtitleLabel" destination="OU9-Ds-jSU" id="G6k-Cc-xmF"/>
+                        <outlet property="titleLabel" destination="jTv-Ir-pxP" id="Pw3-vu-c8L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.800000000000001" y="155.62218890554723"/>
+        </scene>
+    </scenes>
+</document>
