@@ -21,7 +21,7 @@ class HomeTableViewCell: UITableViewCell {
                 return
             }
             label.text = """
-                \(data.id). \(data.aps.alert.title)
+            \(data.id). \(data.aps.alert.title)
             """
             label.textAlignment = .left
             accessoryType = .disclosureIndicator
@@ -32,10 +32,9 @@ class HomeTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
-
 }
